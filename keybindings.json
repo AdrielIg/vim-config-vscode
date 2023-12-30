@@ -1,0 +1,111 @@
+// Place your key bindings in this file to override the defaults
+[
+	// NAVIGATION
+	{
+		"key": "ctrl+shift+a",
+		"command": "workbench.action.terminal.focusNext",
+		"when": "terminalFocus"
+	},
+	{
+		"key": "ctrl+shift+b",
+		"command": "workbench.action.terminal.focusPrevious",
+		"when": "terminalFocus"
+	},
+	{
+		"key": "ctrl+shift+j",
+		"command": "workbench.action.togglePanel"
+	},
+	{
+		"key": "ctrl+shift+n",
+		"command": "workbench.action.terminal.new",
+		"when": "terminalFocus"
+	},
+	{
+		"key": "ctrl+shift+w",
+		"command": "workbench.action.terminal.kill",
+		"when": "terminalFocus"
+	},
+	// FILE TREE
+	{
+		"command": "workbench.action.toggleSidebarVisibility",
+		"key": "ctrl+e"
+	},
+	{
+		"command": "workbench.files.action.focusFilesExplorer",
+		"key": "ctrl+e",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "a",
+		"command": "explorer.newFile",
+		"when": "filesExplorerFocus && !inputFocus"
+	},
+	{
+		"command": "renameFile",
+		"key": "r",
+		"when": "filesExplorerFocus && !inputFocus"
+	},
+	{
+		"key": "f",
+		"command": "explorer.newFolder",
+		"when": "explorerViewletFocus"
+	},
+	{
+		"key": "shift+n",
+		"command": "workbench.action.newWindow",
+		"when": "!explorerViewletFocus"
+	},
+	{
+		"command": "deleteFile",
+		"key": "d",
+		"when": "filesExplorerFocus && !inputFocus"
+	},
+	{
+		"key": "x",
+		"command": "filesExplorer.cut",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+	},
+	{
+		"key": "c",
+		"command": "filesExplorer.copy",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+	},
+	{
+		"key": "v",
+		"command": "filesExplorer.paste",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+	},
+	// lSP Keybindings
+	{
+		"before": ["g", "p", "d"],
+		"commands": ["editor.action.peekDefinition"]
+	},
+	{
+		"before": ["g", "h"],
+		"commands": ["editor.action.showDefinitionPreviewHover"]
+	},
+	{
+		"before": ["g", "m"],
+		"commands": ["editor.action.goToImplementation"]
+	},
+	{
+		"before": ["g", "p", "i"],
+		"commands": ["editor.action.peekImplementation"]
+	},
+	{
+		"before": ["g", "q"],
+		"commands": ["editor.action.quickFix"]
+	}
+	// {
+	// 	"before": ["g", "r"],
+	// 	"commands": ["editor.action.referenceSearch.trigger"]
+	// },
+	// {
+	// 	"before": ["g", "t"],
+	// 	"commands": ["editor.action.goToTypeDefinition"]
+	// },
+	// {
+	// 	"before": ["g", "p", "t"],
+	// 	"commands": ["editor.action.peekTypeDefinition"]
+	// }
+]
